@@ -1,0 +1,49 @@
+<html>
+<body>
+<script>
+
+    var click = 0;
+    var health = 10;
+    var damages = 0;
+    document.getElementById("health").innerHTML = health;
+    function cookieClick(number){
+        click = click + number;
+        health = health - number;
+        damages = damages + 10;
+        document.getElementById("click").innerHTML = click;
+        document.getElementById("health").innerHTML = health;
+        document.getElementById("damages").innerHTML = damages;
+        var nummer = 0;
+        var nr = 19;
+        if(health <= 0){
+            health =  nr;
+            document.getElementById("health").innerHTML = health;
+
+    };
+
+    };
+
+    function changeImage() {
+        setTimeout(function () {
+            document.getElementById("syndra").src="123.png"
+        }, 1000000);
+        document.getElementById("syndra").src="syndra.gif";
+    }
+
+</script>
+total attack click:<span id="click">0</span>
+</br>
+total hp syndra:<span id="health">10</span>
+</br>
+Damage dealt:<span id="damages">0</span>
+
+</br>
+<img id="syndra" src="syndra.gif" width="200px" height="250px" onclick="cookieClick(1), changeImage()"></img>
+</br>
+click Syndra to hit her
+
+
+</body>
+</html>
+</body>
+</html>

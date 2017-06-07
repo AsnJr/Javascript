@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function kleur(){
+        var usercolor = prompt("Le Typo Le Kleuro");
+        document.getElementById("voorbeeld").style.backgroundColor = usercolor;
+    }
+
+    function remove(){
+        var verwijder = document.getElementById("voorbeeld");
+        voorbeeld.parentNode.removeChild(voorbeeld);
+    }
+
+
+</script>
+<button onclick="kleur()">klik hier</button>
+<button onclick="remove()">Delete</button>
+<div id="voorbeeld" style="width: 400px; height: 400px; background-color: black;"></div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function controleren() {
+        var x = document.forms["formulier"]["naam"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+</script>
+<form onsubmit="return controleren()"; name="formulier"
+
+<label for="naam">Naam</label>
+<input type="text" id="naam" naam="naam">
+<input type="submit" value="verzenden">
+
+</body>
+</html>
